@@ -12,9 +12,10 @@
         │   ├── src/
         │   │   └── __init__.py
         │   ├── tools/
-        │   │   ├── run_remote.sh
-        │   │   ├── standard_auto.sh
-        │   │   └── prepare_manifest.sh
+        │   │   ├── run_remote.sh       # 远端真正执行任务
+        │   │   ├── standard_auto.sh    # 本地总控：准备 manifest -> 同步 -> 远端运行 -> 拉回日志
+        │   │   ├── prepare_manifest.sh # 本地生成同步签名
+        |   |   └── sync_to_remote.sh   # 把任务工作区同步到远端
         │   ├── tests/
         │   ├── outputs/
         │   └── log/
